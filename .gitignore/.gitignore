@@ -1,0 +1,7 @@
+/DOCS
+/Sessions/*
+/www/log.txt
+/www/maquette
+**/*.pspimage
+**/*.db
+**/*.7z
