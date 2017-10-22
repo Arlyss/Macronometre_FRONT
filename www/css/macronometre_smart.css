@@ -1,0 +1,708 @@
+<?php header("Content-type: text/css"); echo "\n";?>
+
+html,body {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	height: 100%;
+	/*height: calc(100% - 60px);*/
+	/*overflow: hidden;*/
+	
+	user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+
+html {
+	background-color: #fff;
+	width: 100%;
+	/*height: 100%;*/
+}
+
+body {
+	font-family: montserrat,verdana, sans-serif;
+	font-size: 14px;
+	color: #444;
+	width: 100%;
+	/*height: 100%;*/
+}
+
+@font-face{
+	font-family:'icomoon';
+	src:url("../design/font/icomoon.eot?aqfmk4");
+	src:url("../design/font/icomoon.eot?aqfmk4#iefix") format('embedded-opentype'),
+		url("../design/font/icomoon.woff?aqfmk4") format('woff'),
+		url("../design/font/icomoon.ttf?aqfmk4") format('truetype'),
+		url("../design/font/icomoon.svg?aqfmk4#icomoon") format('svg');
+}
+@font-face{
+	font-family:'montserrat';
+	src:url("../design/font/montserrat-regular.eot");
+	src:url("../design/font/montserrat-regular.eot#iefix") format('embedded-opentype'),
+		url("../design/font/montserrat-regular.woff") format('woff'),
+		url("../design/font/montserrat-regular.ttf") format('truetype'),
+		url("../design/font/montserrat-regular.svg") format('svg');
+}
+@font-face{
+	font-family:'robotoslab';
+	src:url("../design/font/robotoslab-regular.eot");
+	src:url("../design/font/robotoslab-regular.eot#iefix") format('embedded-opentype'),
+		url("../design/font/robotoslab-regular.woff") format('woff'),
+		url("../design/font/robotoslab-regular.ttf") format('truetype'),
+		url("../design/font/robotoslab-regular.svg") format('svg');
+}
+
+<?php
+	$color_FI_Red		=	'#CE400F';
+	$color_FI_Blue		=	'#009AB9';
+	$color_White		=	'#FFFFFF';
+	$color_Gray_Light	=	'#DDDDDD';
+	$color_Gray_Medium	=	'#EEEEEE';
+	$color_Gray_Dark	=	'#B6CBCF';
+	$color_Blue_Light	=	'#EEF3F6';
+	echo " /*\n *\n *\n CAN'T\n STENCHON\n THE\n MELENCHON\n *\n *\n */\n";
+?>
+
+/* ----------------------------------- */
+
+
+.ico_gouvern:before		{content: "\f19c";}
+.ico_paix:before		{content: "\f18c";}
+.ico_guerre:before		{content: "\f19c";}
+.ico_femmes:before		{content: "\f182";}
+.ico_europe:before		{content: "\f153";}
+.ico_logement:before	{content: "\f015";}
+.ico_transport:before	{content: "\f018";}
+.ico_culture:before		{content: "\f02d";}
+.ico_handicap:before	{content: "\f193";}
+.ico_education:before	{content: "\f19d";}
+.ico_enfance:before		{content: "\f1ae";}
+.ico_animaux:before		{content: "\f1b0";}
+.ico_ecologie:before	{content: "\f06c";}
+.ico_renseign:before	{content: "\f070";}
+.ico_consommat:before	{content: "\f07a";}
+.ico_chomage:before		{content: "\f080";}
+.ico_sport:before		{content: "\f091";}
+.ico_terrorisme:before	{content: "\f1e2";}
+.ico_presse:before		{content: "\f1ea";}
+.ico_diplomatie:before	{content: "\f0ac";}
+.ico_recherche:before	{content: "\f0c3";}
+.ico_justice:before		{content: "\f0e3";}
+.ico_sante:before		{content: "\f0fa";}
+.ico_espace:before		{content: "\f135";}
+.ico_industrie:before	{content: "\f275";}
+.ico_lobbying:before	{content: "\f27e";}
+.ico_travail:before		{content: "\f0ad";}
+.ico_laec:before		{content: "\e904";}
+
+
+
+
+/* ----------------------------------- */
+/* -- HEADER / FOOTER               -- */
+/* ----------------------------------- */
+
+div#header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	
+	background-image: linear-gradient(top, #ffffff, <?=$color_Blue_Light?>, <?=$color_Blue_Light?>);
+	background-image: -o-linear-gradient(top, #ffffff, <?=$color_Blue_Light?>, <?=$color_Blue_Light?>);
+	background-image: -ms-linear-gradient(top, #ffffff, <?=$color_Blue_Light?>, <?=$color_Blue_Light?>);
+	background-image: -moz-linear-gradient(top, #ffffff, <?=$color_Blue_Light?>, <?=$color_Blue_Light?>);
+	background-image: -khtml-linear-gradient(top, #ffffff, <?=$color_Blue_Light?>, <?=$color_Blue_Light?>);
+	background-image: -webkit-linear-gradient(top, #ffffff, <?=$color_Blue_Light?>, <?=$color_Blue_Light?>);
+	
+	box-shadow: 0 0 4px 2px rgba(0,0,0,0.3);
+	-o-box-shadow: 0 0 4px 2px rgba(0,0,0,0.3);
+	-ms-box-shadow: 0 0 4px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 0 4px 2px rgba(0,0,0,0.3);
+	-khtml-box-shadow: 0 0 4px 2px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 0 4px 2px rgba(0,0,0,0.3);
+}
+div#header div.center {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	/*margin-left: -512px;*/
+}
+div#header div.center div.logo {
+	position: absolute;
+	width: 219px;
+	height: 100%;
+	top: 0;
+	left: 15px;
+	background-image: url(../design/header_FI.png);
+	background-position: 0 0;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+}
+
+div#footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	
+	background-image: linear-gradient(top, <?=$color_Blue_Light?>, <?=$color_Blue_Light?>, #ffffff);
+	background-image: -o-linear-gradient(top, <?=$color_Blue_Light?>, <?=$color_Blue_Light?>, #ffffff);
+	background-image: -ms-linear-gradient(top, <?=$color_Blue_Light?>, <?=$color_Blue_Light?>, #ffffff);
+	background-image: -moz-linear-gradient(top, <?=$color_Blue_Light?>, <?=$color_Blue_Light?>, #ffffff);
+	background-image: -khtml-linear-gradient(top, <?=$color_Blue_Light?>, <?=$color_Blue_Light?>, #ffffff);
+	background-image: -webkit-linear-gradient(top, <?=$color_Blue_Light?>, <?=$color_Blue_Light?>, #ffffff);
+	
+	box-shadow: 0 0 4px 2px rgba(0,0,0,0.3);
+	-o-box-shadow: 0 0 4px 2px rgba(0,0,0,0.3);
+	-ms-box-shadow: 0 0 4px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 0 4px 2px rgba(0,0,0,0.3);
+	-khtml-box-shadow: 0 0 4px 2px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 0 4px 2px rgba(0,0,0,0.3);
+}
+div#footer div.center {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0%;
+}
+div#footer div.center div.discord {
+	position: absolute;
+	width: 120px;
+	height: 100%;
+	bottom: -4px;
+	right: 5px;
+	margin: 0 0 0 0;
+	background-image: url(../design/discord.png);
+	background-position: 100% 0;
+	background-size: auto 80%;
+	background-repeat: no-repeat;
+}
+div#footer div.discord div.discord_line1,
+div#footer div.discord div.discord_line2 {
+    text-align: right;
+    margin: 0 66px 0 0;
+    font-size: 16px;
+}
+div#footer div.discord div.discord_line1 {
+    color: <?= $color_FI_Red ?>;
+}
+div#footer div.discord div.discord_line2 {
+    color: <?= $color_FI_Blue ?>;
+}
+
+
+
+/* ----------------------------------- */
+/* -- MODAL VIEW                    -- */
+/* ----------------------------------- */
+
+div#modal_screen {
+	/*display: none;*/
+	position: fixed;
+	top: -9999px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: rgba(255,255,255,0.0);
+
+	transition: background 0.5s;
+	-o-transition: background 0.5s;
+	-ms-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	-khtml-transition: background 0.5s;
+	-webkit-transition: background 0.5s;
+}
+div#modal_screen.display {
+	/*display: block;*/
+	top: 0;
+	background: rgba(255,255,255,0.5);
+}
+div#modal_screen div.modal_window {
+	position: absolute;
+	top: -50%;
+	left: 50%;
+	width: 70%;
+	min-height: 150px;
+	margin: -134px 0 0 -254px;
+	padding: 10px;
+	background-color: <?=$color_White?>;
+	border: 2px solid <?=$color_FI_Blue?>;
+	
+	border-radius: 16px;
+	-o-border-radius: 16px;
+	-ms-border-radius: 16px;
+	-moz-border-radius: 16px;
+	-khtml-border-radius: 16px;
+	-webkit-border-radius: 16px;
+	
+	box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.4);
+	-o-box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.4);
+	-ms-box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.4);
+	-moz-box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.4);
+	-khtml-box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.4);
+
+	transition: top 0.5s;
+	-o-transition: top 0.5s;
+	-ms-transition: top 0.5s;
+	-moz-transition: top 0.5s;
+	-khtml-transition: top 0.5s;
+	-webkit-transition: top 0.5s;
+}
+div#modal_screen.display div.modal_window {
+	top: 65%;
+}
+
+div#modal_screen div.modal_window div.laec_title {
+	width: calc(100% - 60px);
+	margin: 0 0 10px 0;
+	padding: 8px;
+	background-color: <?=$color_FI_Red?>;
+	color: #fff;
+	font-size: 12px;
+}
+div#modal_screen div.modal_window div.laec_text_label {
+	position: relative;
+	margin: 0 0 3px -8px;
+	font-weight: bold;
+	font-size: 12px;
+}
+div#modal_screen div.modal_window div.laec_text {
+	font-family: robotoslab,verdana,arial;
+	padding: 8px;
+	background-color: <?=$color_FI_Blue?>;
+	color: #fff;
+	font-size: 12px;
+}
+div#modal_screen div.modal_window div.laec_link {
+	width: 110px;
+	padding: 0 4px 8px 4px;
+	font-size: 10px;
+	background-color: #009AB9;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+
+	border-radius: 0 0 6px 6px;
+	-o-border-radius: 0 0 6px 6px;
+	-ms-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-khtml-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+
+	text-shadow: 0 0 4px rgba(0,0,0,1);
+	-o-text-shadow: 0 0 4px rgba(0,0,0,1);
+	-ms-text-shadow: 0 0 4px rgba(0,0,0,1);
+	-moz-text-shadow: 0 0 4px rgba(0,0,0,1);
+	-khtml-text-shadow: 0 0 4px rgba(0,0,0,1);
+	-webkit-text-shadow: 0 0 4px rgba(0,0,0,1);
+}
+div#modal_screen div.modal_window div.laec_link::before {
+	position: relative;
+	top: 5px;
+	margin: 0 5px 0 0;
+	font: normal normal normal 22px/1 icomoon;
+}
+div#modal_screen div.modal_window div.laec_link:hover {
+	text-shadow: 0 0 4px rgba(255,255,255,1);
+	-o-text-shadow: 0 0 4px rgba(255,255,255,1);
+	-ms-text-shadow: 0 0 4px rgba(255,255,255,1);
+	-moz-text-shadow: 0 0 4px rgba(255,255,255,1);
+	-khtml-text-shadow: 0 0 4px rgba(255,255,255,1);
+	-webkit-text-shadow: 0 0 4px rgba(255,255,255,1);
+}
+
+div#modal_screen div.modal_window div.modal_close {
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	width: 40px;
+	height: 37px;
+	padding: 3px 0 0 0;
+	text-align: center;
+	border: 2px solid <?=$color_FI_Blue?>;
+	background-color: #aaa;
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+
+	border-radius: 0 16px 0 16px;
+	-o-border-radius: 0 16px 0 16px;
+	-ms-border-radius: 0 16px 0 16px;
+	-moz-border-radius: 0 16px 0 16px;
+	-khtml-border-radius: 0 16px 0 16px;
+	-webkit-border-radius: 0 16px 0 16px;
+
+	text-shadow: 1px 1px 2px #000;
+	-o-text-shadow: 1px 1px 2px #000;
+	-ms-text-shadow: 1px 1px 2px #000;
+	-moz-text-shadow: 1px 1px 2px #000;
+	-khtml-text-shadow: 1px 1px 2px #000;
+	-webkit-text-shadow: 1px 1px 2px #000;
+}
+div#modal_screen div.modal_window div.modal_close:hover {
+	background-color: #ddd;
+}
+
+
+
+
+/* ----------------------------------- */
+/* -- STRUCTURE                     -- */
+/* ----------------------------------- */
+
+div#center {
+	position: relative;
+	width: 640px;
+	height: 100%;
+	left: 0;
+	margin: 50px 0 0 0;
+}
+
+div#MACRON {
+	position: fixed;
+	width: 250px;
+	height: 620px;
+	top: 50px;
+	left: 0;
+	
+	background-image: url(../design/macron.png);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+
+div#center div#handRight {
+	position: fixed;
+	top: 50px;
+	left: 0;
+	width: 145px;
+	height: 255px;
+	background-image: url(../design/macron_HR.png);
+	background-position: 120px 206px;
+	background-repeat: no-repeat;
+}
+
+div#center div#emptySpace {
+	position: relative;
+	float: left;
+	width: calc(20% - 8px);
+	height: calc(100% - 220px);
+}
+
+div#center div#content {
+	position: relative;
+	float: left;
+	width: 80%;
+	min-height: calc(100% - 220px);
+	margin: 0 0 60px 0;
+	overflow: hidden;
+	
+	border: 2px solid <?=$color_Gray_Dark?>;
+	background-color: <?=$color_Blue_Light?>;
+	
+	border-radius: 16px;
+	-o-border-radius: 16px;
+	-ms-border-radius: 16px;
+	-moz-border-radius: 16px;
+	-khtml-border-radius: 16px;
+	-webkit-border-radius: 16px;
+	
+	box-shadow: 4px 4px 6px rgba(0,0,0,0.15), inset -3px -3px 6px rgba(0,0,0,0.1), inset 3px 3px 6px rgba(255,255,255,0.9);
+	-o-box-shadow: 4px 4px 6px rgba(0,0,0,0.15), inset -3px -3px 6px rgba(0,0,0,0.1), inset 3px 3px 6px rgba(255,255,255,0.9);
+	-ms-box-shadow: 4px 4px 6px rgba(0,0,0,0.15), inset -3px -3px 6px rgba(0,0,0,0.1), inset 3px 3px 6px rgba(255,255,255,0.9);
+	-moz-box-shadow: 4px 4px 6px rgba(0,0,0,0.15), inset -3px -3px 6px rgba(0,0,0,0.1), inset 3px 3px 6px rgba(255,255,255,0.9);
+	-khtml-box-shadow: 4px 4px 6px rgba(0,0,0,0.15), inset -3px -3px 6px rgba(0,0,0,0.1), inset 3px 3px 6px rgba(255,255,255,0.9);
+	-webkit-box-shadow: 4px 4px 6px rgba(0,0,0,0.15), inset -3px -3px 6px rgba(0,0,0,0.1), inset 3px 3px 6px rgba(255,255,255,0.9);
+}
+
+div#content div#mesures {
+	padding: 5px 0 0 5px;
+}
+
+
+
+
+
+/* ----------------------------------- */
+/* -- MESURES                       -- */
+/* ----------------------------------- */
+
+
+div#mesures div.mesure {
+	float: left;
+	position: relative;
+	width: 159px;
+	height: 268px;
+	margin: 0 5px 5px 0;
+	border: 2px solid <?=$color_Gray_Light?>;
+	background-color: <?=$color_White?>;
+	overflow: hidden;
+	
+	border-radius: 12px;
+	-o-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-khtml-border-radius: 12px;
+	-webkit-border-radius: 12px;
+}
+
+div#mesures div.mesure div.icon_box {
+	position: relative;
+	width: calc(100% - 12px);
+	height: 150px;
+	margin: 4px;
+	border: 2px solid <?=$color_Gray_Light?>;
+	/*background: <?=$color_Blue_Light?>;*/
+	background: <?=$color_FI_Blue?>;
+	cursor: pointer;
+	
+	border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	
+	/* === TRANSITION === */
+	transition: height 0.2s;
+	-o-transition: height 0.2s;
+	-ms-transition: height 0.2s;
+	-moz-transition: height 0.2s;
+	-khtml-transition: height 0.2s;
+	-webkit-transition: height 0.2s;
+}
+/* === TRANSITION === */
+div#mesures div.mesure.opened div.icon_box {
+	height: 30px;
+}
+div#mesures div.mesure div.icon_box div.icon {
+	width: calc(100% - 8px);
+	height: calc(100% - 28px);
+	margin: 4px;
+	padding: 20px 0 0 0;
+	text-align: center;
+	/*color: #aaa;*/
+	color: <?=$color_FI_Red?>;
+	/*background-color: <?=$color_White?>;*/
+	font: normal normal normal 100px/1 icomoon;
+	font-size: 100px;
+	
+	border-radius: 18px;
+	-o-border-radius: 18px;
+	-ms-border-radius: 18px;
+	-moz-border-radius: 18px;
+	-khtml-border-radius: 18px;
+	-webkit-border-radius: 18px;
+
+	text-shadow: 0 0 10px rgba(255,255,255,0.5);
+	-o-text-shadow: 0 0 10px rgba(255,255,255,0.5);
+	-ms-text-shadow: 0 0 10px rgba(255,255,255,0.5);
+	-moz-text-shadow: 0 0 10px rgba(255,255,255,0.5);
+	-khtml-text-shadow: 0 0 10px rgba(255,255,255,0.5);
+	-webkit-text-shadow: 0 0 10px rgba(255,255,255,0.5);
+	
+	/* === TRANSITION === */
+	transition: font-size 0.2s, border-radius 0.2s;
+	-o-transition: font-size 0.2s, -o-border-radius 0.2s;
+	-ms-transition: font-size 0.2s, -ms-border-radius 0.2s;
+	-moz-transition: font-size 0.2s, -moz-border-radius 0.2s;
+	-khtml-transition: font-size 0.2s, -khtml-border-radius 0.2s;
+	-webkit-transition: font-size 0.2s, -webkit-border-radius 0.2s;
+}
+/* === TRANSITION === */
+div#mesures div.mesure.opened div.icon_box div.icon {
+	font-size: 16px;
+	height: calc(100% - 11px);
+	padding: 3px 0 0 0;
+	
+	border-radius: 4px;
+	-o-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+div#mesures div.mesure div.title {
+	width: calc(100% - 12px);
+	height: 30px;
+	margin: 0 0 0 7px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 15px;
+	font-size: 12px;
+	cursor: pointer;
+	
+	/* === TRANSITION === */
+	/*transition: margin 0.2s;
+	-o-transition: margin 0.2s;
+	-ms-transition: margin 0.2s;
+	-moz-transition: margin 0.2s;
+	-khtml-transition: margin 0.2s;
+	-webkit-transition: margin 0.2s;*/
+}
+/* === TRANSITION === */
+/*div#mesures div.mesure.opened div.title {
+	margin: 0 0 0 7px;
+}*/
+
+div#mesures div.mesure div.title:hover {
+	color: #888;
+}
+
+div#mesures div.mesure div.details {
+	position: relative;
+	width: calc(100% - 12px);
+	margin: 0 6px 0 6px;
+	height: 0px;
+	font-family: robotoslab,verdana,arial;
+	overflow: hidden;
+	
+	transition-delay: 0s;
+	-o-transition-delay: 0s;
+	-ms-transition-delay: 0s;
+	-moz-transition-delay: 0s;
+	-khtml-transition-delay: 0s;
+	-webkit-transition-delay: 0s;
+	
+	/* === TRANSITION === */
+	transition: height 0.4s;
+	-o-transition: height 0.4s;
+	-ms-transition: height 0.4s;
+	-moz-transition: height 0.4s;
+	-khtml-transition: height 0.4s;
+	-webkit-transition: height 0.4s;
+}
+/* === TRANSITION === */
+div#mesures div.mesure.opened div.details {
+	height: 255px;
+}
+
+div#mesures div.mesure div.details_quoteA {
+	width: 100%;
+	/*height: calc(100% - 120px);*/
+	margin: 5px 0 0 0;
+	background-color: <?=$color_Gray_Medium?>;
+	text-align: center;
+	
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+	background-image: url(../design/quote_A.png);
+	background-size: 23px 21px;
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+}
+div#mesures div.mesure div.details_quoteB {
+	width: 100%;
+	height: 100%;
+	background-image: url(../design/quote_B.png);
+	background-size: 23px 21px;
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+}
+div#mesures div.mesure div.details_text {
+	font-family: robotoslab,verdana,arial;
+	font-size: 10px;
+	width: calc(100% - 52px);
+	padding: 4px 26px;
+}
+
+
+div#mesures div.mesure div.achievements {
+	position: absolute;
+	width: calc(100% - 5px);
+	bottom: -60px;
+	left: 3px;
+}
+div#mesures div.mesure.opened div.achievements {
+	bottom: 3px; 
+}
+div#mesures div.achievements div.badge {
+	display: inline-block;
+	position: relative;
+	width: 45px;
+	height: 45px;
+	border: 2px solid <?=$color_Gray_Light?>;
+	background-color: <?=$color_White?>;
+	margin: 0 -6px 0 2px;
+	cursor: pointer;
+
+	background-image: url(../design/dramatic.jpg);
+	background-repeat: no-repeat;
+	background-size: auto 45px;
+	background-position: 0 0;
+	
+	border-radius: 27px;
+	-o-border-radius: 27px;
+	-ms-border-radius: 27px;
+	-moz-border-radius: 27px;
+	-khtml-border-radius: 27px;
+	-webkit-border-radius: 27px;
+}
+div#mesures div.achievements div.badge.disabled {
+	cursor: default;
+}
+div#badge_info {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 360px;
+	padding: 4px;
+	background-color: <?=$color_Gray_Medium?>;
+	border: 1px solid #fff;
+	font-size: 12px;
+	z-index: 100;
+	
+	border-radius: 6px;
+	-o-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	
+	box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.3);
+	-o-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.3);
+	-ms-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.3);
+	-moz-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.3);
+	-khtml-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.3);
+}
+div#mesures div.achievements div.badge div.info_date,
+div#mesures div.achievements div.badge div.info_text,
+div#mesures div.achievements div.badge div.laec_title,
+div#mesures div.achievements div.badge div.laec_text,
+div#mesures div.achievements div.badge div.laec_link {
+	display: none;
+}
+
+div.combo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 293px;
+	height: 157px;
+	background-image: url(../design/combo.png);
+	background-position: 0px 0px;
+	margin: -78px 0 0 -146px;
+
+	text-align: center;
+	font-size: 80px;
+	font-weight: bold;
+	color: #ff0;
+	text-shadow: 0 0 6px #f00;
+}
